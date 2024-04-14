@@ -1,0 +1,68 @@
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    background-image: url(../images/slider-left-dec.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+ }
+ 
+      /* Form style */
+      .form-container form {
+         padding: 30px;
+         border-radius: 10px;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+         text-align: center;
+         max-width: 400px;
+         background-image: url("../images/client-bg.png"); /* Set background image */
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-color: #ffffff; /* Set form background color */
+      }
+
+      /* Input field style */
+      .form-container form input[type="text"],
+      .form-container form input[type="password"] {
+         width: calc(100% - 30px); /* Adjust width */
+         padding: 15px;
+         margin: 10px 0;
+         border: 1px solid #ccc; /* Add border */
+         border-radius: 5px;
+         font-size: 16px;
+         outline: none; /* Remove outline */
+      }
+
+      /* Submit button style */
+      .form-container form input[type="submit"] {
+         width: calc(100% - 30px); /* Adjust width */
+         padding: 15px;
+         margin: 10px 0;
+         border: none;
+         border-radius: 5px;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+         background-color: #007bff; /* Set button background color */
+         color: #fff; /* Set button text color */
+         font-size: 16px;
+         cursor: pointer;
+         outline: none; /* Remove outline */
+      }
+
+      /* Link style */
+      .form-container form p a {
+         text-decoration: none; /* Remove underline */
+         color: #fff; /* Set link color */
+      }
+
+      /* Error message style */
+      .form-container form .error-msg {
+         color: #ff0000; /* Set error message color */
+      }
