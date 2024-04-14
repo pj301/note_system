@@ -33,7 +33,6 @@ include 'addnotes.php';
 
      <div id="mainGeader" class="notes-header">
             <h1>All Notes</h1>
-            <input type="text" class="search-bar" id="searchBar" placeholder="Search...">
             <a href="#" onclick="openModal()" class="notes-icon"><i class='fas fa-plus'></i> Create Note</a>
         </div>    
         <div class="notes-grid" id="notesGrid">

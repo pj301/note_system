@@ -31,7 +31,6 @@ include_once 'dashboard.php';
                 <span class="favorites-header">Archived Notes</span>
                 <button class="remove-button" onclick="removeSelectedNotes()">Remove</button>
             </h1>
-            <input type="text" class="search-bar" id="searchBar" placeholder="Search...">
             
             <button class="remove-all-button" onclick="deleteAllNotes()">Delete All Notes</button>
         </div>    

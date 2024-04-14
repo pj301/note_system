@@ -18,7 +18,8 @@ body {
     transition: margin-left .5s;
     padding: 16px;
     margin-left: 250px; /* Adjusted margin when sidebar is open */
-    margin-top: 60px; /* Adjusted margin to avoid overlapping with the top bar */
+    margin-top:50px;
+    height: 100%;
   }
 /* Header styles */
 header {

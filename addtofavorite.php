@@ -12,7 +12,7 @@ if(isset($_GET['id']) && isset($_GET['favorite'])) {
         $userId = $_SESSION['user_id'];
 
         // Update the favorite status in the database
-        $updateQuery = "UPDATE tbl_notes SET favorite = '$favorite' WHERE n_id = '$noteId' AND id = '$userId'";
+        $updateQuery = "UPDATE tbl_notes SET favorite = '$favorite'  WHERE n_id = '$noteId' AND id = '$userId'";
         $updateResult = mysqli_query($conn, $updateQuery);
 
         if($updateResult) {

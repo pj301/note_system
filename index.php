@@ -386,7 +386,7 @@ function submitForm() {
                     document.getElementById("successContainer").innerHTML = "<span class='success-msg'>" + response.message + "</span>";
                     setTimeout(function() {
                         document.getElementById("successContainer").innerHTML = ""; // Clear success message after 5 seconds
-                    }, 5000);
+                    }, 3000);
                     // Redirect to index.php
                     window.location.href = "index.php";
                     // You can also delay the redirection to give user a chance to read the success message

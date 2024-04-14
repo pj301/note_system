@@ -30,7 +30,7 @@ include_once 'dashboard.php';
             <h1>
                 <span class="favorites-header">Favorite Notes</span>
             </h1>
-            <input type="text" class="search-bar" id="searchBar" placeholder="Search...">
+
         </div>     
         <div class="notes-grid" id="notesGrid">
         <?php
@@ -40,7 +40,7 @@ include_once 'dashboard.php';
           
             $userId = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 0; 
 
-            $query = "SELECT * FROM tbl_notes WHERE id = '$userId' AND favorite = 1 ORDER BY n_id DESC";
+            $query = "SELECT * FROM tbl_notes WHERE id = '$userId' AND favorite = 1 AND archived= 0 ORDER BY n_id DESC";
             $result = mysqli_query($conn, $query);
 
             if (mysqli_num_rows($result) > 0) {    
